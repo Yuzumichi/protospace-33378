@@ -5,6 +5,6 @@ class UsersController < ApplicationController
     @profile = @user.profile
     @occupation = @user.occupation
     @position = @user.position
-    @prototypes = Prototype.includes(:user)
+    @prototypes = @user.prototypes
   end
 end
